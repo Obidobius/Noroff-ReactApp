@@ -1,0 +1,102 @@
+body {
+  background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/rick-and-morty-background-art.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+}
+
+.CharacterCard {
+  margin: 0;
+}
+
+.btn {
+  background-color: OrangeRed;
+  border-color: lightgray;
+}
+
+.title {
+  color: lightskyblue;
+  text-shadow: 2px 2px 3px  yellowgreen;
+}
+
+.hinge {
+  border-radius: 100%;
+  padding: 10px 20px 10px 20px;
+  -webkit-box-shadow: inset 2px 1px 0px 1px lightgray;
+          box-shadow: inset 2px 1px 0px 1px lightgray;
+}
+
+@-webkit-keyframes hinge {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+}
+
+@keyframes hinge {
+  from,
+  to {
+    -webkit-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+  }
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    -webkit-transform: translate3d(-10px, 0, 0);
+            transform: translate3d(-10px, 0, 0);
+  }
+  20%,
+  40%,
+  60%,
+  80% {
+    -webkit-transform: translate3d(10px, 0, 0);
+            transform: translate3d(10px, 0, 0);
+  }
+}
+
+.hinge:hover {
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-transform-origin: top center;
+          transform-origin: top center;
+  -webkit-animation-name: hinge;
+          animation-name: hinge;
+  background-color: Orange;
+  border-color: black;
+  -webkit-box-shadow: inset 0px 0.3px 10px 1px black;
+          box-shadow: inset 0px 0.3px 10px 1px black;
+}
+
+.search {
+  width: 500px;
+  text-align: center;
+  margin: auto;
+  border: solid gray 1px;
+  border-radius: 4%;
+  -webkit-box-shadow: inset 10px 10px 10px 10px black;
+          box-shadow: inset 10px 10px 10px 10px black;
+}
+
+.card-body {
+  margin: auto;
+  text-align: center;
+}
+/*# sourceMappingURL=App.css.map */

@@ -1,0 +1,76 @@
+$blackColor:black;
+$lightBlack: lightgray;
+$OrangeColor: Orange;
+$OrangeRedColor:OrangeRed;
+body{
+    background-image: url(https://backgroundcheckall.com/wp-content/uploads/2017/12/rick-and-morty-background-art.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.CharacterCard{
+    margin: 0;
+}
+
+.btn{
+    background-color: $OrangeRedColor;
+    border-color: lightgray;
+
+}
+
+.title{
+    color: lightskyblue;
+    text-shadow: 2px 2px 3px  yellowgreen;
+}
+.hinge{
+    border-radius: 100%;
+    padding: 10px 20px 10px 20px;
+    box-shadow:inset 2px 1px 0px 1px lightgray;
+}
+
+@keyframes hinge {
+    from,
+    to {
+      transform: translate3d(0, 0, 0);
+    }
+  
+    10%,
+    30%,
+    50%,
+    70%,
+    90% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    20%,
+    40%,
+    60%,
+    80% {
+      transform: translate3d(10px, 0, 0);
+    }
+}
+      
+.hinge:hover {
+    animation-duration: 1s;
+    transform-origin: top center;
+    animation-name: hinge;
+    background-color: $OrangeColor;
+    border-color:$blackColor;
+    box-shadow: inset 0px 0.3px 10px 1px $blackColor;
+  }
+
+
+  .search{
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border: solid gray 1px;
+    border-radius: 4%;
+    box-shadow: inset 10px 10px 10px 10px $blackColor;
+  }
+
+  .card-body{
+      margin: auto;
+      text-align: center;
+  }
